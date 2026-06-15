@@ -1,0 +1,29 @@
+# ============================================
+# Agent客服项目 - 依赖清单
+# ============================================
+# 安装命令: pip install -r requirements.txt
+
+# --- 核心框架 ---
+langchain>=0.3.0              # LLM应用开发框架，提供Chain/Tool/Memory等基础能力
+langgraph>=0.2.0              # Agent编排框架，用状态图定义多分支流程（本项目核心）
+langchain-community>=0.3.0    # LangChain社区集成（向量库、文本切分等）
+
+# --- 向量库与Embedding ---
+chromadb>=0.5.0               # 轻量级向量数据库，单机运行，适合demo和面试展示
+sentence-transformers>=3.0.0  # 本地Embedding模型加载（BGE-small-zh）
+
+# --- LLM API ---
+openai>=1.30.0                # OpenAI兼容API客户端（DeepSeek/Qwen等都用这个接口）
+
+# --- 后端 ---
+fastapi>=0.111.0              # 高性能异步Web框架，写API接口
+uvicorn>=0.30.0               # ASGI服务器，运行FastAPI
+python-dotenv>=1.0.0          # 从.env文件加载环境变量
+pydantic>=2.0.0               # 数据校验（FastAPI内置依赖）
+
+# --- 前端 ---
+streamlit>=1.35.0             # 快速搭对话界面，不用写前端代码
+
+# --- 工具与辅助 ---
+httpx>=0.27.0                 # 异步HTTP客户端，工具调用内部发请求用
+loguru>=0.7.0                 # 更好用的日志库

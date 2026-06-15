@@ -1,0 +1,78 @@
+{
+    "students":[
+        {
+            "student_id": "S1001",
+            "name": "小明",
+            "grade": "高二",
+            "progress": {
+                "数学": {
+                    "level": "中等偏上",
+                    "completed_chapters": ["函数", "三角函数", "数列"],
+                    "current_chapter": "解析几何",
+                    "weak_points": ["圆锥曲线", "参数方程"],
+                    "recent_score": 82
+                },
+                "Python": {
+                    "level": "入门",
+                    "completed_chapters": ["变量与类型", "条件判断", "循环"],
+                    "current_chapter": "函数",
+                    "weak_points": ["递归", "列表推导式"],
+                    "recent_score": 75
+                }
+            }
+        }
+    ],
+
+    
+    "homework":[
+        {
+            "homework_id": "HW20260601",
+            "student_id": "S1001",
+            "subject": "数学",
+            "title": "解析几何-椭圆方程练习",
+            "deadline": "2026-06-10",
+            "status": "pending",
+            "score": null
+        },
+        {
+            "homework_id": "HW20260602",
+            "student_id": "S1001",
+            "subject": "Python",
+            "title": "函数与递归-编程练习",
+            "deadline": "2026-06-12",
+            "status": "pending",
+            "score": null
+        },
+        {
+            "homework_id": "HW20260530",
+            "student_id": "S1001",
+            "subject": "数学",
+            "title": "数列综合练习",
+            "deadline": "2026-06-05",
+            "status": "completed",
+            "score": 85
+        }
+    ],
+
+
+    "mistakes" : [
+        {
+            "mistake_id": "M001",
+            "student_id": "S1001",
+            "subject": "数学",
+            "question_summary": "求椭圆x²/9 + y²/4 = 1的离心率",
+            "error_type": "概念混淆",
+            "correct_approach": "离心率e = c/a，其中c² = a² - b² = 9-4=5，所以c=√5，e=√5/3",
+            "reviewed": false
+        },
+        {
+            "mistake_id": "M002",
+            "student_id": "S1001",
+            "subject": "Python",
+            "question_summary": "用递归实现字符串反转",
+            "error_type": "递归终止条件遗漏",
+            "correct_approach": "base case: len(s) <= 1 return s; 递归: return reverse(s[1:]) + s[0]",
+            "reviewed": true
+        }
+    ]
+}
